@@ -328,6 +328,7 @@ export function Projects() {
             </button>
           </div>
 
+          {/* Dot Indicators */}
           {totalPages > 1 && (
             <motion.div
               className="flex justify-center gap-2 mt-12"
