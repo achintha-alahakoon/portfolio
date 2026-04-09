@@ -21,6 +21,7 @@ import postgreIcon from '../assets/images/postgre.png';
 import reactIcon from '../assets/images/react.png';
 import restapiIcon from '../assets/images/restapi.png';
 import bitbucketIcon from '../assets/images/bitbucket.png';
+import angularIcon from '../assets/images/angular.png';
 
 const techCategories = [
 {
@@ -77,6 +78,11 @@ const techCategories = [
   {
     name: 'Next.js',
     icon: 'N'
+  },
+  {
+    name: 'Angular',
+    icon: angularIcon,
+    isImage: true
   },
   {
     name: 'Tailwind CSS',
