@@ -8,10 +8,35 @@ export function Contact() {
     email: '',
     message: ''
   });
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    
+    try {
+      // Google Apps Script deployment URL
+      const scriptUrl = 'https://script.google.com/macros/s/AKfycbzOB8u_2obnkfvDyD-XMlklLO1mxy4P2fSeZAhvORBHZUqs0jOXPSffu4TFuY4WtBuPmg/exec';
+      
+      const response = await fetch(scriptUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData),
+        mode: 'no-cors'
+      });
+      
+      setSubmitMessage('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setSubmitMessage(''), 3000);
+    } catch (error) {
+      setSubmitMessage('Error sending message. Please try again.');
+      console.error('Error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   const handleChange = (
   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
@@ -224,16 +249,27 @@ export function Contact() {
 
               <motion.button
                 type="submit"
-                className="w-full px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-xl font-semibold shadow-lg shadow-cyan-500/30 transition-all"
+                className="w-full px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-xl font-semibold shadow-lg shadow-cyan-500/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 whileHover={{
                   scale: 1.02
                 }}
                 whileTap={{
                   scale: 0.98
-                }}>
+                }}
+                disabled={isSubmitting}>
                 
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </motion.button>
+              
+              {submitMessage && (
+                <div className={`text-center py-2 px-4 rounded-xl ${
+                  submitMessage.includes('success') 
+                    ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
+                    : 'bg-red-500/20 text-red-400 border border-red-500/30'
+                }`}>
+                  {submitMessage}
+                </div>
+              )}
             </form>
           </motion.div>
         </div>
