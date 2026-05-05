@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MonitorIcon, ServerIcon, CodeIcon, BrainIcon } from 'lucide-react';
-import { SectionWrapper } from './SectionWrapper';
+import { SectionWrapper } from '../components/SectionWrapper';
 const services = [
 {
   icon: CodeIcon,

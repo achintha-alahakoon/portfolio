@@ -8,7 +8,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon } from
 'lucide-react';
-import { SectionWrapper } from './SectionWrapper';
+import { SectionWrapper } from '../components/SectionWrapper';
 import gpacalculatorImage from '../assets/images/gpacalculator.jpg';
 
 

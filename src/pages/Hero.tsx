@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ThreeBackground } from './ThreeBackground';
+import { ThreeBackground } from '../components/ThreeBackground';
 const titles = [
 'Software Engineer',
 'Application Support Engineer',

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MailIcon, PhoneIcon, LinkedinIcon, GithubIcon } from 'lucide-react';
-import { SectionWrapper } from './SectionWrapper';
+import { SectionWrapper } from '../components/SectionWrapper';
 export function Contact() {
   const [formData, setFormData] = useState({
     name: '',

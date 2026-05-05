@@ -1,13 +1,12 @@
-import React from 'react';
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Services } from './components/Services';
-import { TechStack } from './components/TechStack';
-import { Experience } from './components/Experience';
-import { Projects } from './components/Projects';
-import { Education } from './components/Education';
-import { Contact } from './components/Contact';
+import { Hero } from './pages/Hero';
+import { About } from './pages/About';
+import { Services } from './pages/Services';
+import { TechStack } from './pages/TechStack';
+import { Experience } from './pages/Experience';
+import { Projects } from './pages/Projects';
+import { Education } from './pages/Education';
+import { Contact } from './pages/Contact';
 import { Footer } from './components/Footer';
 
 function AppContent() {

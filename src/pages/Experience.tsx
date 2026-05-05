@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BriefcaseIcon } from 'lucide-react';
-import { SectionWrapper } from './SectionWrapper';
+import { SectionWrapper } from '../components/SectionWrapper';
 
 const experiences = [
 {

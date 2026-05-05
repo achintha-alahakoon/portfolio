@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { SectionWrapper } from './SectionWrapper';
+import { SectionWrapper } from '../components/SectionWrapper';
 export function About() {
   return (
     <SectionWrapper id="about">
