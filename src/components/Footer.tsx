@@ -69,34 +69,7 @@ export function Footer() {
                   onClick={(e) => handleScroll(e, '#contact')}
                   className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
                   
-                  Tech Stack
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#tech-stack"
-                  onClick={(e) => handleScroll(e, '#tech-stack')}
-                  className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  onClick={(e) => handleScroll(e, '#contact')}
-                  className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  
                   Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#tech-stack"
-                  onClick={(e) => handleScroll(e, '#tech-stack')}
-                  className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  
-                  Education
                 </a>
               </li>
               <li>
@@ -190,6 +163,22 @@ export function Footer() {
             © {new Date().getFullYear()} Achintha Alahakoon. All rights
             reserved.
           </p>
+          <div>
+            <a
+              href="/privacy-policy.html"
+              className="text-slate-400 hover:text-cyan-400 transition-colors text-sm"
+              target="_blank"
+              rel="noopener noreferrer">
+              Privacy Policy
+            </a>
+            <a
+              href="/terms-of-service.html"
+              className="text-slate-400 hover:text-cyan-400 transition-colors text-sm ml-4"
+              target="_blank"
+              rel="noopener noreferrer">
+              Terms of Service
+            </a>
+          </div>
         </div>
       </div>
     </footer>);

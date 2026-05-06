@@ -5,6 +5,7 @@ import cssIcon from '../assets/images/css.png';
 import gitIcon from '../assets/images/git.png';
 import javaIcon from '../assets/images/java.png';
 import jsIcon from '../assets/images/js.png';
+import tsIcon from '../assets/images/ts.png';
 import mysqlIcon from '../assets/images/mysql.png';
 import pythonIcon from '../assets/images/python.png';
 import htmlIcon from '../assets/images/html.png';
@@ -27,6 +28,8 @@ import kubernetesIcon from '../assets/images/k8s.png';
 import grafanaIcon from '../assets/images/grafana.png';
 import cicdIcon from '../assets/images/cicd.png';
 import linuxIcon from '../assets/images/linux.png';
+import terraformIcon from '../assets/images/terraform.png';
+import jenkinsIcon from '../assets/images/jenkins.png';
 
 export const techCategories = [
   {
@@ -56,7 +59,8 @@ export const techCategories = [
       },
       {
         name: 'TypeScript',
-        icon: 'TS'
+        icon: tsIcon,
+        isImage: true
       },
       {
         name: 'C++',
@@ -68,7 +72,7 @@ export const techCategories = [
         icon: 'SQL'
       }
     ],
-    className: 'md:col-span-1'
+    className: 'md:col-span-2'
   },
   {
     id: 'frontend',
@@ -105,7 +109,7 @@ export const techCategories = [
         isImage: true
       }
     ],
-    className: 'md:col-span-1'
+    className: 'md:col-span-2'
   },
   {
     id: 'backend',
@@ -137,7 +141,64 @@ export const techCategories = [
         isImage: true
       }
     ],
-    className: 'md:col-span-1'
+    className: 'md:col-span-2'
+  },
+  {
+    id: 'devops',
+    title: 'DevOps & Cloud',
+    icon: CloudIcon,
+    items: [
+      {
+        name: 'Docker',
+        icon: dockerIcon,
+        isImage: true
+      },
+      {
+        name: 'Kubernetes',
+        icon: kubernetesIcon,
+        isImage: true
+      },
+      {
+        name: 'Grafana',
+        icon: grafanaIcon,
+        isImage: true
+      },
+      {
+        name: 'Prometheus',
+        icon: 'P'
+      },
+      {
+        name: 'Azure',
+        icon: azureIcon,
+        isImage: true
+      },
+      {
+        name: 'AWS',
+        icon: awsIcon,
+        isImage: true
+      },
+      {
+        name: 'CI/CD',
+        icon: cicdIcon,
+        isImage: true
+      },
+      {
+        name: 'Jenkins',
+        icon: jenkinsIcon,
+        isImage: true
+      },
+      {
+        name: 'Terraform',
+        icon: terraformIcon,
+        isImage: true
+      },
+      {
+        name: 'Linux',
+        icon: linuxIcon,
+        isImage: true
+      }
+    ],
+    className: 'md:col-span-3'
   },
   {
     id: 'database',
@@ -180,55 +241,8 @@ export const techCategories = [
         isImage: true
       }
     ],
-    className: 'md:col-span-1'
+    className: 'md:col-span-3'
   },
-  {
-    id: 'devops',
-    title: 'DevOps & Cloud',
-    icon: CloudIcon,
-    items: [
-      {
-        name: 'Docker',
-        icon: dockerIcon,
-        isImage: true
-      },
-      {
-        name: 'Kubernetes',
-        icon: kubernetesIcon,
-        isImage: true
-      },
-      {
-        name: 'Grafana',
-        icon: grafanaIcon,
-        isImage: true
-      },
-      {
-        name: 'Prometheus',
-        icon: 'P'
-      },
-      {
-        name: 'Azure',
-        icon: azureIcon,
-        isImage: true
-      },
-      {
-        name: 'AWS',
-        icon: awsIcon,
-        isImage: true
-      },
-      {
-        name: 'CI/CD',
-        icon: cicdIcon,
-        isImage: true
-      },
-      {
-        name: 'Linux',
-        icon: linuxIcon,
-        isImage: true
-      }
-    ],
-    className: 'md:col-span-1'
-  }
 ];
 
 // Flatten all items for the marquee

@@ -47,6 +47,21 @@ const certificationsData = [
   }
 ];
 
+function RevealMask({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  return (
+    <div style={{ overflow: 'hidden' }}>
+      <motion.div
+        initial={{ y: '110%' }}
+        whileInView={{ y: '0%' }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.75, delay, ease: [0.22, 1, 0.36, 1] }}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+}
+
 export function Education() {
   const [activeTab, setActiveTab] = useState('degrees');
   return (
@@ -55,25 +70,32 @@ export function Education() {
       className="bg-gradient-to-b from-transparent to-slate-900/20">
       
       <div className="max-w-4xl mx-auto">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
-          initial={{
-            opacity: 0,
-            y: 20
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0
-          }}
-          viewport={{
-            once: true
-          }}
-          transition={{
-            duration: 0.6
-          }}>
-          
-          Education
-        </motion.h2>
+        <div className="text-center mb-20 relative z-10">
+          <motion.p
+            className="text-cyan-400 text-sm uppercase tracking-[0.3em] mb-4 font-medium"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            Education
+          </motion.p>
+          <RevealMask>
+            <h2 className="text-5xl md:text-7xl font-black tracking-tight text-white">
+              Educ
+              <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-violet-400 bg-clip-text text-transparent">
+                ation
+              </span>
+            </h2>
+          </RevealMask>
+          <motion.div
+            className="mx-auto mt-5 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent"
+            initial={{ width: 0, opacity: 0 }}
+            whileInView={{ width: '200px', opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.9, delay: 0.4, ease: 'easeOut' }}
+          />
+        </div>
 
         {/* Filter Tabs */}
         <motion.div

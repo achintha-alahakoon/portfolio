@@ -97,7 +97,7 @@ export function Navbar() {
       <div className="max-w-8xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <motion.a
           href="#home"
-          className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+          className="text-2xl font-bold text-cyan-400"
           onClick={(e) => handleNavClick(e, '#home')}
           whileHover={{
             scale: 1.05

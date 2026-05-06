@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import Lenis from 'lenis';
 import { Navbar } from './components/Navbar';
 import { Hero } from './pages/Hero';
 import { About } from './pages/About';
@@ -10,6 +12,20 @@ import { Contact } from './pages/Contact';
 import { Footer } from './components/Footer';
 
 function AppContent() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 transition-colors duration-300">
