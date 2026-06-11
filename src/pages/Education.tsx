@@ -22,7 +22,7 @@ const degreesData = [
   {
     title: 'B.Sc. (Hons) in Information Technology',
     institution: 'University of Kelaniya',
-    gpa: '3.34',
+    gpa: '3.00',
     research: 'AI-Driven Fraud Detection in the Market Research Surveys: Identifying Fake Submissions Using Behavioral and Data Patterns'
   },
   {
