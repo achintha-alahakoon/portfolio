@@ -20,9 +20,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Column 1: Brand & Bio */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white flex items-center gap-1">
+            <h3 className="text-2xl font-bold text-cyan-400 flex items-center gap-1">
               Achintha Alahakoon
-              <span className="text-cyan-500 text-3xl leading-none">.</span>
+              <span className="text-cyan-400 text-3xl leading-none">.</span>
             </h3>
             <p className="text-slate-400 leading-relaxed text-sm">
               Building intelligent digital experiences with an emphasis on usability,
@@ -96,6 +96,20 @@ export function Footer() {
                   className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
                   
                   achinthaalahakoon68@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                  
+                  070 3212 590
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                  
+                  070 4890 488
                 </a>
               </li>
               <li className="text-slate-400 text-sm">Sri Lanka</li>

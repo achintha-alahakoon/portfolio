@@ -30,6 +30,7 @@ import cicdIcon from '../assets/images/cicd.png';
 import linuxIcon from '../assets/images/linux.png';
 import terraformIcon from '../assets/images/terraform.png';
 import jenkinsIcon from '../assets/images/jenkins.png';
+import MSSQLServerIcon from '../assets/images/mssql-server.png';
 
 export const techCategories = [
   {
@@ -205,6 +206,11 @@ export const techCategories = [
     title: 'Databases & Tools',
     icon: DatabaseIcon,
     items: [
+      {
+        name: ' MS SQL Server',
+        icon: MSSQLServerIcon,
+        isImage: true
+      },
       {
         name: 'MySQL',
         icon: mysqlIcon,

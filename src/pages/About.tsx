@@ -273,11 +273,6 @@ export function About() {
                   className={`absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl bg-gradient-to-b ${p.accent}`}
                 />
 
-                {/* Soft glow on hover */}
-                <div
-                  className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-br ${p.accent} opacity-[0.04]`}
-                />
-
                 <div className="flex flex-col md:flex-row md:items-start gap-5">
                   <div className="flex-shrink-0 w-36 text-sm text-slate-400">
                     <span
