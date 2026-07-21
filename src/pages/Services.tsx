@@ -1,109 +1,5 @@
-// import { motion } from 'framer-motion';
-// import { MonitorIcon, ServerIcon, CodeIcon, BrainIcon } from 'lucide-react';
-// import { SectionWrapper } from '../components/SectionWrapper';
-// const services = [
-// {
-//   icon: CodeIcon,
-//   title: 'Full-Stack Development',
-//   description:
-//   'Developing responsive and user-friendly web applications using Next.js, React and modern frontend tools.'
-// },
-// {
-//   icon: MonitorIcon,
-//   title: 'Application Support',
-//   description:
-//   'Monitoring, troubleshooting, and maintaining enterprise applications to ensure high performance and reliability.'
-// },
-// {
-//   icon: ServerIcon,
-//   title: 'Backend Development',
-//   description:
-//   'Building scalable backend systems and REST APIs using C#, Spring Boot and Node.js.'
-// },
-// {
-//   icon: BrainIcon,
-//   title: 'AI & Data Solutions',
-//   description:
-//   'Applying machine learning techniques to analyze data and build intelligent solutions.'
-// }];
-
-// export function Services() {
-//   return (
-//     <SectionWrapper
-//       id="services"
-//       className="bg-gradient-to-b from-transparent to-slate-900/20">
-      
-//       <div className="max-w-7xl mx-auto">
-//         <motion.h2
-//           className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
-//           initial={{
-//             opacity: 0,
-//             y: 20
-//           }}
-//           whileInView={{
-//             opacity: 1,
-//             y: 0
-//           }}
-//           viewport={{
-//             once: true
-//           }}
-//           transition={{
-//             duration: 0.6
-//           }}>
-          
-//           What I Do
-//         </motion.h2>
-
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-//           {services.map((service, index) => {
-//             const Icon = service.icon;
-//             return (
-//               <motion.div
-//                 key={service.title}
-//                 className="glass glass-hover rounded-3xl p-8"
-//                 initial={{
-//                   opacity: 0,
-//                   y: 30
-//                 }}
-//                 whileInView={{
-//                   opacity: 1,
-//                   y: 0
-//                 }}
-//                 viewport={{
-//                   once: true
-//                 }}
-//                 transition={{
-//                   duration: 0.6,
-//                   delay: index * 0.1
-//                 }}>
-                
-//                 <div className="flex items-start gap-6">
-//                   <div className="p-4 bg-cyan-500/10 rounded-2xl border border-cyan-500/20">
-//                     <Icon className="w-8 h-8 text-cyan-400" />
-//                   </div>
-//                   <div className="flex-1">
-//                     <h3 className="text-2xl font-semibold mb-3 text-slate-100">
-//                       {service.title}
-//                     </h3>
-//                     <p className="text-slate-400 leading-relaxed">
-//                       {service.description}
-//                     </p>
-//                   </div>
-//                 </div>
-//               </motion.div>);
-
-//           })}
-//         </div>
-//       </div>
-//     </SectionWrapper>);
-
-// }
-
-
-
-
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { MonitorIcon, ServerIcon, CodeIcon, BrainIcon } from 'lucide-react';
+import { MonitorIcon, ServerIcon, CodeIcon, DatabaseIcon } from 'lucide-react';
 import { SectionWrapper } from '../components/SectionWrapper';
 import { useRef } from 'react';
 
@@ -113,7 +9,7 @@ const services = [
     number: '01',
     title: 'Full-Stack Development',
     description:
-      'Developing responsive and user-friendly web applications using Next.js, React and modern frontend tools.',
+      'Building scalable and responsive web applications using React, ASP.NET Core, Spring Boot, and modern development practices.',
     accent: 'from-cyan-400 to-sky-500',
     glow: 'rgba(34,211,238,0.15)',
     border: 'rgba(34,211,238,0.25)',
@@ -123,46 +19,46 @@ const services = [
     tag: 'Frontend & Backend',
   },
   {
-    icon: MonitorIcon,
+    icon: ServerIcon,
     number: '02',
-    title: 'Application Support',
+    title: 'Backend & API Development',
     description:
-      'Monitoring, troubleshooting, and maintaining enterprise applications to ensure high performance and reliability.',
+      'Developing secure REST APIs and backend services using ASP.NET Core, Spring Boot, C#, and Java.',
     accent: 'from-violet-400 to-purple-500',
     glow: 'rgba(167,139,250,0.15)',
     border: 'rgba(167,139,250,0.25)',
     iconBg: 'bg-violet-500/10',
     iconBorder: 'border-violet-500/20',
     iconColor: 'text-violet-400',
-    tag: 'Enterprise Systems',
+    tag: 'APIs & Services',
   },
   {
-    icon: ServerIcon,
+    icon: MonitorIcon,
     number: '03',
-    title: 'Backend Development',
+    title: 'Cloud & DevOps',
     description:
-      'Building scalable backend systems and REST APIs using C#, Spring Boot and Node.js.',
+      'Deploying, maintaining, and supporting enterprise applications using Microsoft Azure, Azure DevOps, and CI/CD workflows.',
     accent: 'from-emerald-400 to-teal-500',
     glow: 'rgba(52,211,153,0.15)',
     border: 'rgba(52,211,153,0.25)',
     iconBg: 'bg-emerald-500/10',
     iconBorder: 'border-emerald-500/20',
     iconColor: 'text-emerald-400',
-    tag: 'APIs & Infrastructure',
+    tag: 'Azure & CI/CD',
   },
   {
-    icon: BrainIcon,
+    icon: DatabaseIcon,
     number: '04',
-    title: 'AI & Data Solutions',
+    title: 'Database Solutions',
     description:
-      'Applying machine learning techniques to analyze data and build intelligent solutions.',
+      'Designing, optimizing, and managing relational databases with SQL Server and MySQL for enterprise applications.',
     accent: 'from-rose-400 to-pink-500',
     glow: 'rgba(251,113,133,0.15)',
     border: 'rgba(251,113,133,0.25)',
     iconBg: 'bg-rose-500/10',
     iconBorder: 'border-rose-500/20',
     iconColor: 'text-rose-400',
-    tag: 'ML & Analytics',
+    tag: 'SQL & Data',
   },
 ];
 

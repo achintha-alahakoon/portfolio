@@ -5,10 +5,10 @@ import { useRef } from 'react';
 
 const experiences = [
   {
-    title: 'Application Support Engineer Intern',
+    title: 'Software Engineer Intern',
     company: 'Fintechnology Asia Pacific Lanka (Pvt) Ltd (FINAP)',
     description:
-      'Supporting enterprise applications by monitoring system performance, troubleshooting production issues, and ensuring data accuracy using SQL and API analysis. Collaborating with teams to maintain reliable system operations.',
+      'Developing and supporting fintech applications using React, .NET, SQL Server, and Azure. Working on frontend modules, backend API integrations, database operations, and troubleshooting production systems to deliver reliable enterprise solutions.',
     number: '01',
     accent: 'from-cyan-400 to-sky-500',
     glow: 'rgba(34,211,238,0.12)',
@@ -18,13 +18,13 @@ const experiences = [
     iconBorder: 'border-cyan-500/20',
     dotColor: 'bg-cyan-400',
     dotGlow: 'shadow-cyan-400/60',
-    tags: ['SQL', 'Azure', 'API Analysis', 'System Monitoring'],
+    tags: ['React', '.NET', 'SQL Server', 'Azure', 'REST APIs'],
   },
   {
     title: 'Software Engineer Intern',
-    company: 'SLT Mobitel',
+    company: 'Sri Lanka Telecom PLC (SLT)',
     description:
-      'Developed full-stack applications using React and Spring Boot, built REST APIs, and worked with databases to support enterprise-level solutions.',
+      'Developed full-stack enterprise applications using React, Spring Boot, and MySQL. Designed REST APIs, implemented frontend components, and integrated database solutions for the Product Information System.',
     number: '02',
     accent: 'from-violet-400 to-purple-500',
     glow: 'rgba(167,139,250,0.12)',
@@ -34,13 +34,13 @@ const experiences = [
     iconBorder: 'border-violet-500/20',
     dotColor: 'bg-violet-400',
     dotGlow: 'shadow-violet-400/60',
-    tags: ['React', 'Spring Boot', 'REST APIs'],
+    tags: ['React', 'Spring Boot', 'Java', 'MySQL', 'REST APIs'],
   },
   {
     title: 'Production Supervisor',
     company: 'Royal Ceramics Lanka PLC',
     description:
-      'Managed production operations, optimized workflows, and ensured quality control in a fast-paced manufacturing environment.',
+      'Managed daily production operations, coordinated teams, monitored quality standards, and improved operational efficiency within a manufacturing environment.',
     number: '03',
     accent: 'from-emerald-400 to-teal-500',
     glow: 'rgba(52,211,153,0.12)',
@@ -50,7 +50,7 @@ const experiences = [
     iconBorder: 'border-emerald-500/20',
     dotColor: 'bg-emerald-400',
     dotGlow: 'shadow-emerald-400/60',
-    tags: ['Operations', 'Quality Control', 'Leadership'],
+    tags: ['Operations', 'Quality Control', 'Team Leadership'],
   },
 ];
 

@@ -10,36 +10,36 @@ import { useRef, useState, useEffect } from "react";
 
 const paragraphs = [
   {
-    label: "01 - Role",
-    text: "I am an IT graduate currently working as an Application Support Engineer Intern at Fintechnology Asia Pacific Lanka (Pvt) Ltd (FINAP), with a strong foundation in software systems, database management, and troubleshooting. I enjoy solving real-world problems by analyzing system behavior, identifying issues, and ensuring applications run smoothly.",
+    label: "01 - About",
+    text: "I am an IT graduate currently working as a Software Engineer Intern at Fintechnology Asia Pacific Lanka (Pvt) Ltd (FINAP). My experience includes developing and maintaining cloud-based enterprise applications while contributing to scalable software solutions used in real-world business environments.",
     accent: "from-cyan-400 to-sky-500",
-    tag: "Support Engineering",
+    tag: "Software Engineering",
   },
   {
-    label: "02 - Stack",
-    text: "In addition to support, I have experience in full-stack development using technologies such as Java, Spring Boot, C#, React, Next.js, Angular, and TypeScript. I have also worked with REST APIs, cloud deployments, and database systems.",
+    label: "02 - Expertise",
+    text: "I specialize in full-stack development using React, ASP.NET Core, C#, Spring Boot, SQL Server, and MySQL. I also have experience with REST API development, Microsoft Azure, Azure DevOps, and Agile software delivery.",
     accent: "from-violet-400 to-purple-500",
-    tag: "Full-Stack Dev",
+    tag: "Full-Stack Development",
   },
   {
-    label: "03 - Research",
-    text: "My interest in Artificial Intelligence led me to complete a research project focused on fraud detection using machine learning techniques. I enjoy combining analytical thinking with engineering to build efficient and intelligent systems.",
+    label: "03 - Passion",
+    text: "Passionate about building scalable, reliable, and cloud-native applications, I enjoy learning modern technologies, solving complex technical challenges, and collaborating with teams to deliver high-quality software products.",
     accent: "from-emerald-400 to-teal-500",
-    tag: "AI & ML",
+    tag: "Cloud & Innovation",
   },
 ];
 
 const skills = [
+  "React",
+  "ASP.NET Core",
+  "C#",
   "Java",
   "Spring Boot",
-  "C#",
-  "React",
-  "Angular",
+  "SQL Server",
+  "Microsoft Azure",
+  "Azure DevOps",
   "REST APIs",
-  "Cloud",
-  "ML / AI",
-  "SQL",
-  "Troubleshooting",
+  "TypeScript",
 ];
 
 function TiltCard({
