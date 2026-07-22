@@ -3,7 +3,11 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { ThreeBackground } from '../components/ThreeBackground';
 import { ArrowDownIcon, GithubIcon, LinkedinIcon, MailIcon, GraduationCapIcon } from 'lucide-react';
 
-const titles = ['Software Engineer', 'Application Support Engineer', 'AI Enthusiast'];
+const titles = [
+  'Software Engineer',
+  'Full-Stack Developer',
+  'Cloud & AI Enthusiast',
+];
 
 const socials = [
   { icon: GithubIcon, href: 'https://github.com/achintha-alahakoon', label: 'GitHub' },
